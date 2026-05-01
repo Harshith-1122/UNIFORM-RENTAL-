@@ -182,7 +182,7 @@ function handleWhatsAppBooking(e) {
   message += `Please confirm availability.`;
   
   const encodedMessage = encodeURIComponent(message);
-  const phoneNumber = "910000000000"; // Placeholder
+  const phoneNumber = "8951286213"; // Placeholder
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   
   window.open(whatsappUrl, '_blank');
