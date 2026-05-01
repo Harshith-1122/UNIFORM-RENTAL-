@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.R Uniform Rentals | Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon.svg">
+    <meta name="theme-color" content="#0A192F">
+</head>
+<body id="admin-dashboard">
+
+<header>
+    <h1>S.R Uniform Rentals <span style="font-size: 0.8rem; color: var(--accent-color); vertical-align: middle;">[ADMIN]</span></h1>
+    <div class="nav-links">
+        <a href="index.html">Catalog</a>
+        <a href="admin.html" class="active">Admin</a>
+    </div>
+</header>
+
+<div class="container">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <h2 class="section-title" style="margin-bottom: 0;">Inventory Dashboard</h2>
+        <button class="btn btn-small btn-outline" style="border-color: var(--danger); color: var(--danger);" onclick="resetInventory()">Reset DB</button>
+    </div>
+
+    <!-- Stats Overview -->
+    <div class="stats-overview">
+        <div class="stat-box">
+            <h3>Total Inventory</h3>
+            <div class="number" id="stat-total">0</div>
+        </div>
+        <div class="stat-box" style="background-color: white; border: 1px solid var(--border-color);">
+            <h3 style="color: var(--text-muted);">Available Stock</h3>
+            <div class="number" id="stat-available" style="color: var(--success);">0</div>
+        </div>
+        <div class="stat-box" style="background-color: white; border: 1px solid var(--border-color);">
+            <h3 style="color: var(--text-muted);">Currently Rented</h3>
+            <div class="number" id="stat-rented" style="color: var(--danger);">0</div>
+        </div>
+    </div>
+
+    <div class="admin-grid">
+        <!-- Shirts Admin -->
+        <div class="admin-card">
+            <h3>Server Shirts Inventory</h3>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Total Stock</th>
+                            <th>Available</th>
+                            <th>Rented Out</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-shirts-body">
+                        <!-- Injected by app.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Trousers Admin -->
+        <div class="admin-card">
+            <h3>Server Trousers Inventory</h3>
+            <div style="overflow-x: auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Size</th>
+                            <th>Total Stock</th>
+                            <th>Available</th>
+                            <th>Rented Out</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="admin-trousers-body">
+                        <!-- Injected by app.js -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Future Enhancement Placeholder -->
+        <div class="admin-card" style="border: 1px dashed var(--accent-color); background: rgba(100, 255, 218, 0.05);">
+            <h3 style="color: var(--primary-color);">📱 QR Code Scanning (Coming Soon)</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">In future updates, a scanner will be integrated here to instantly mark items as rented or returned by scanning physical QR tags on the uniforms.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 S.R Uniform Rentals. All Rights Reserved.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
