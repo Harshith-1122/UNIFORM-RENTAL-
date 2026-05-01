@@ -1,2 +1,2 @@
 # UNIFORM-RENTAL-
-UNIFORM RENTAL DESCRIPTION
+Uniform rental is a managed service where a supplier provides, launders, repairs, and replaces employee uniforms on a scheduled basis. This model eliminates the need for businesses to purchase, clean, and maintain garments internally, ensuring a professional, consistent, and hygienic appearance. Key aspects include personalized fittings, weekly pick-up/delivery, and garment tracking.
